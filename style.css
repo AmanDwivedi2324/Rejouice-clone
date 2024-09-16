@@ -289,3 +289,53 @@ nav h4{
     transform: scale(0); */
 }
 
+#page6{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page6 h1{
+    font-size: 9vw;
+    font-family: rejoy;
+    font-weight: 100;
+    /* padding-left: 4vw; */
+    border-bottom:2px solid black;
+    width: 96%;
+    margin-left: 2%;
+    /* background-color: red; */
+}
+
+#swiper-div{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
