@@ -128,33 +128,62 @@ function page4Animation(){
 
 page4Animation();
 
-// var svgTxt = document.querySelector("#page5 h1");
-// var svg = document.querySelector("#page5 video");
 
-// svg.addEventListener("mousemove",function(){
-//     svgTxt.style.transition = "all ease 0.5s";
-//     svgTxt.style.opacity = "1";
-//     svgTxt.style.transform = "scale(1)";
-    
-// })
 
-// svg.addEventListener("mouseleave",function(){
-//     svgTxt.style.transition = "all ease 0.5s";
-//     svgTxt.style.opacity = "0";
-//     svgTxt.style.transform = "scale(0)";
-    
-// })
+function sliderAnimation(){
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+         autoplay: {
+            duration:5,
+            delay: 2500,
+            disableOnInteraction: true,
+            // stagger:1
+          },
+      });
+}
+sliderAnimation();
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+
+var tl = gsap.timeline();
+tl.from("#loader h3",{
+  x:80,
+  opacity:0,
+  duration:1,
+  stagger:0.1
+})
+
+tl.to("#loader h3",{
+    opacity:0,
+    delay:0.5,
+    duration:1,
+    x:-80,
+    stagger:0.1
+})
+
+tl.to("#loader",{
+    opacity:0,
+    duration:1
+})
+
+tl.from("#page1 h1 span",{
+    y:100,
+    opacity:0,
+    delay:-0.5,
+    duration:0.5,
+    stagger:0.2
+})
+
+tl.to("#loader",{
+    display:"none"
+})
+
