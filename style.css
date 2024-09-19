@@ -360,3 +360,118 @@ nav h4{
     font-size: 2vw;
  }
  
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    /* display: flex; */
+    color: white;
+}
+
+#page7 #top{
+    display: flex;
+    /* background-color: lightpink; */
+    height: 40%;
+}
+
+#page7 #left{
+    height: 40%;
+    width: 70%;
+    /* background-color: lightgray; */
+    /* padding: 20px; */
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+#page7 #left h2{
+    font-size: 1.8rem;
+    font-family: nav;
+    font-weight: 200;
+}
+
+#page7 #left button{
+    padding: 16px 24px 16px 24px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: nav;
+    font-weight: 200;
+    margin-top: 25px;
+    /* margin-left: 15px; */
+    cursor: pointer;
+}
+
+#page7 #left button:hover{
+    background-color: #fff;
+    color: black;
+    transition: all ease 2;
+}
+
+#page7 #right{
+    height: 40%;
+    width: 30%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-family: nav;
+    font-weight: 100;
+    
+}
+
+#page7 #right #right-first,
+#page7 #right #right-second{
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
+#page7 #right #right-first h4,
+#page7 #right #right-second h4{
+    padding:2px ;
+}
+
+#center{
+    height: 10%;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+}
+
+#center-left{
+    width: 70%;
+    /* background-color: lightgray; */
+    /* padding: 20px; */
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 100;
+}
+
+#center-right{
+    width: 30%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-family: nav;
+    font-weight: 100;
+    margin-top: 25px;
+}
+
+#page7 #bottom h1{
+    font-family: rejoy;
+    font-size: 25vw;
+    font-weight: 100;
+    line-height: 25vw;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+#page7 #bottom h1 span{
+    font-family: rejoy;
+    display: inline-block;
+    
+}

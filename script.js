@@ -154,8 +154,9 @@ function sliderAnimation(){
 sliderAnimation();
 
 
-var tl = gsap.timeline();
-tl.from("#loader h3",{
+function loaderAnimation(){
+    var tl = gsap.timeline();
+  tl.from("#loader h3",{
   x:80,
   opacity:0,
   duration:1,
@@ -187,3 +188,37 @@ tl.to("#loader",{
     display:"none"
 })
 
+}
+
+loaderAnimation();
+
+
+// gsap.from("#page7",{
+//     // y:100,
+//     // opacity:0,
+//     duration:2,
+//     scrollTrigger:{
+//         scroller:"body",
+//         trigger:"#page7",
+//         start:"top 50%",
+//         end:"top 20%",
+//         markers:true
+//     }
+// })
+
+gsap.from("#page7 #bottom h1 span",{
+    y:-150,
+    opacity:0,
+    delay:5,
+    duration:1,
+    stagger:0.1
+    // scrollTrigger:"#page7"
+    // scrollTrigger:{
+    //     scroller:"body",
+    //     trigger:"#page7 #center",
+    //     start:"top 50%",
+    //     end:"top 10%",
+    //     markers:true
+    // }
+   
+})
